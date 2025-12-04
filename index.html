@@ -696,14 +696,14 @@
             <div class="progress-container">
                 <div class="progress-header">
                     <h3>আজকের অগ্রগতি</h3>
-                    <span id="ads-progress">0/500</span>
+                    <span id="ads-progress">0/50</span>
                 </div>
                 <div class="progress-bar">
                     <div class="progress-fill" id="progress-fill"></div>
                 </div>
                 <div class="progress-text">
                     <span>0 টাকা</span>
-                    <span>500 টাকা</span>
+                    <span>50 টাকা</span>
                 </div>
             </div>
             
@@ -721,7 +721,7 @@
             
             <div class="action-buttons">
                 <button class="btn btn-primary" id="watch-ad-btn" onclick="watchAd()">
-                    <i class="fas fa-play"></i> বিজ্ঞাপন দেখুন (২ টাকা)
+                    <i class="fas fa-play"></i> বিজ্ঞাপন দেখুন (৪ পয়সা)
                 </button>
                 <button class="btn btn-success" id="auto-ad-btn" onclick="startAutoAds()">
                     <i class="fas fa-robot"></i> স্বয়ংক্রিয় বিজ্ঞাপন
@@ -769,8 +769,8 @@
             </div>
             
             <div class="rate-info">
-                <p><i class="fas fa-ad"></i> প্রতি বিজ্ঞাপন = ২ টাকা</p>
-                <p><i class="fas fa-money-bill-wave"></i> ন্যূনতম উত্তোলন: ৫০০ টাকা</p>
+                <p><i class="fas fa-ad"></i> প্রতি বিজ্ঞাপন = ৪ পয়সা</p>
+                <p><i class="fas fa-money-bill-wave"></i> ন্যূনতম উত্তোলন: ৫০ টাকা</p>
                 <p><i class="fas fa-gift"></i> রেফারেল বোনাস: ১০ টাকা প্রতি ব্যবহারকারী</p>
                 <p><i class="fas fa-clock"></i> দৈনিক সীমা: ৫০০ বিজ্ঞাপন</p>
             </div>
@@ -782,7 +782,7 @@
             
             <div class="action-buttons">
                 <button class="btn btn-primary" id="watch-ad-btn-earn" onclick="watchAd()">
-                    <i class="fas fa-play"></i> বিজ্ঞাপন দেখুন (২ টাকা)
+                    <i class="fas fa-play"></i> বিজ্ঞাপন দেখুন (৪ পয়সা)
                 </button>
                 <button class="btn btn-success" id="auto-ad-btn-earn" onclick="startAutoAds()">
                     <i class="fas fa-robot"></i> স্বয়ংক্রিয় বিজ্ঞাপন
@@ -811,7 +811,7 @@
             </div>
             
             <div class="rate-info">
-                <p><i class="fas fa-ad"></i> প্রতি বিজ্ঞাপন = ২ টাকা</p>
+                <p><i class="fas fa-ad"></i> প্রতি বিজ্ঞাপন = ৪ পয়সা</p>
                 <p><i class="fas fa-gift"></i> রেফারেল বোনাস: ১০ টাকা প্রতি ব্যবহারকারী</p>
                 <p><i class="fas fa-clock"></i> দৈনিক সীমা: ৫০০ বিজ্ঞাপন</p>
             </div>
@@ -829,7 +829,7 @@
             <div class="withdraw-section" id="withdraw-section">
                 <div class="form-group">
                     <label for="withdraw-amount">পরিমাণ (টাকা)</label>
-                    <input type="number" id="withdraw-amount" class="form-control" placeholder="টাকার পরিমাণ লিখুন" min="500">
+                    <input type="number" id="withdraw-amount" class="form-control" placeholder="টাকার পরিমাণ লিখুন" min="50">
                 </div>
                 <div class="form-group">
                     <label for="payment-method">পেমেন্ট মাধ্যম</label>
@@ -851,7 +851,7 @@
             </div>
             
             <div class="rate-info">
-                <p><i class="fas fa-money-bill-wave"></i> ন্যূনতম উত্তোলন: ৫০০ টাকা</p>
+                <p><i class="fas fa-money-bill-wave"></i> ন্যূনতম উত্তোলন: ৫০ টাকা</p>
                 <p><i class="fas fa-clock"></i> উত্তোলন প্রসেসিং সময়: ২৪-৪৮ ঘন্টা</p>
             </div>
         </div>
@@ -875,7 +875,7 @@
                 
                 <div class="stat-card">
                     <h3><i class="fas fa-exclamation-triangle"></i> গুরুত্বপূর্ণ নোটিশ</h3>
-                    <p>উত্তোলনের জন্য ন্যূনতম ৫০০ টাকা প্রয়োজন। দয়া করে উত্তোলন করার আগে নিশ্চিত হয়ে নিন।</p>
+                    <p>উত্তোলনের জন্য ন্যূনতম ৫০ টাকা প্রয়োজন। দয়া করে উত্তোলন করার আগে নিশ্চিত হয়ে নিন।</p>
                     <small>১ সপ্তাহ আগে</small>
                 </div>
                 
@@ -927,8 +927,8 @@
 
     <script>
         // Constants
-        const POINTS_PER_AD = 2.00; // প্রতি বিজ্ঞাপনে ২ টাকা
-        const MIN_WITHDRAW_TAKA = 500; // ন্যূনতম উত্তোলন ৫০০ টাকা
+        const POINTS_PER_AD = 0.04; // প্রতি বিজ্ঞাপনে ৪ পয়সা (0.04 টাকা)
+        const MIN_WITHDRAW_TAKA = 50; // ন্যূনতম উত্তোলন ৫০ টাকা
         const REFERRAL_BONUS = 10.00; // রেফারেল বোনাস ১০ টাকা
         const MIN_REFERRAL_COUNT = 10; // ন্যূনতম রেফার সংখ্যা
         const DAILY_AD_LIMIT = 500; // দৈনিক বিজ্ঞাপন সীমা
@@ -1286,7 +1286,7 @@
                     createCoinAnimation();
                     
                     // Show success notification
-                    showNotification(`২ টাকা যোগ হয়েছে! আপনার ব্যালেন্স: ${(earnedPoints + referralEarnings).toFixed(2)} টাকা`, 'success');
+                    showNotification(`৪ পয়সা যোগ হয়েছে! আপনার ব্যালেন্স: ${(earnedPoints + referralEarnings).toFixed(2)} টাকা`, 'success');
                     
                     // Check if daily limit is reached
                     if (dailyAdsWatched >= DAILY_AD_LIMIT) {
